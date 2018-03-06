@@ -1,3 +1,81 @@
 [submodule ".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
 	path = .oh-my-zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule ".vim/bundle/tcomment_vim"]
+	path = .vim/bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/bundle/vim-pathogen"]
+	path = .vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen
+[submodule ".vim/bundle/desert-warm"]
+	path = .vim/bundle/desert-warm
+	url = https://github.com/rainux/vim-desert-warm-256
+[submodule ".vim/bundle/vim-lucius"]
+	path = .vim/bundle/vim-lucius
+	url = https://github.com/jonathanfilip/vim-lucius
+[submodule ".vim/bundle/iceberg"]
+	path = .vim/bundle/iceberg
+	url = https://github.com/cocopon/iceberg.vim/
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule ".vim/bundle/vim-airline-themes"]
+	path = .vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
+[submodule ".vim/bundle/tabular"]
+	path = .vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule ".vim/bundle/ctrlp"]
+	path = .vim/bundle/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule ".vim/bundle/html5"]
+	path = .vim/bundle/html5
+	url = https://github.com/othree/html5.vim
+[submodule ".vim/bundle/phpcomplete"]
+	path = .vim/bundle/phpcomplete
+	url = https://github.com/shawncplus/phpcomplete.vim
+[submodule ".vim/bundle/emmet-vim"]
+	path = .vim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim
+[submodule ".vim/bundle/MatchTag"]
+	path = .vim/bundle/MatchTag
+	url = https://github.com/gregsexton/MatchTag
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = https://github.com/gabrielelana/vim-markdown
+[submodule ".vim/bundle/vim-lilypond"]
+	path = .vim/bundle/vim-lilypond
+	url = https://github.com/DLongoni/vim-lilypond-integrator
+[submodule ".vim/bundle/vim-desert-warm-256"]
+	path = .vim/bundle/vim-desert-warm-256
+	url = https://github.com/rainux/vim-desert-warm-256
+[submodule ".vim/bundle/iceberg.vim"]
+	path = .vim/bundle/iceberg.vim
+	url = https://github.com/cocopon/iceberg.vim/
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule ".vim/bundle/html5.vim"]
+	path = .vim/bundle/html5.vim
+	url = https://github.com/othree/html5.vim
+[submodule ".vim/bundle/phpcomplete.vim"]
+	path = .vim/bundle/phpcomplete.vim
+	url = https://github.com/shawncplus/phpcomplete.vim
+[submodule ".vim/bundle/vim-lilypond-integrator"]
+	path = .vim/bundle/vim-lilypond-integrator
+	url = https://github.com/DLongoni/vim-lilypond-integrator
