@@ -62,8 +62,6 @@ plugins=(
   git
   vi-mode
   sudo
-  dirhistory
-  per-directory-history
   web-search
   zsh-autosuggestions
 )
@@ -100,3 +98,5 @@ alias zshconfig="vim ~/.zshrc"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias proxytest="cd ~/DEV/proxy; python3 proxy.py"
 alias uuaa='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove && sudo apt-get autoclean'
+alias picclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(png\|jpg\)" -exec mv {} /media/davide/SAMSUNG/SW/AlgSoft\ Resizer\ 4.21/P \;'
+alias vidclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(flv\|3g\|mp4\|mov\|avi\|mpg\|mpeg\)" -exec mv {} ~\/dwhelper \;'
