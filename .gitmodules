@@ -79,3 +79,9 @@
 [submodule ".vim/bundle/vim-lilypond-integrator"]
 	path = .vim/bundle/vim-lilypond-integrator
 	url = https://github.com/DLongoni/vim-lilypond-integrator
+[submodule ".vim/bundle/vim-colors-solarized"]
+	path = .vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bumblebee-status"]
+	path = bumblebee-status
+	url = https://github.com/tobi-wan-kenobi/bumblebee-status

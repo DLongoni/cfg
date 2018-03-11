@@ -13,7 +13,12 @@ get release from https://github.com/FortAwesome/Font-Awesome
 extract, put .ttf files (3 atm: fa-brands, fa-regular, fa-solid) in $HOME/.fonts
 
 # zsh, i3
-sudo apt-get install zsh i3 i3status i3blocks
+sudo apt-get install zsh i3 i3status i3blocks rofi thunar
+
+## arc theme
+sudo apt-get install lxappearence 
+https://github.com/horst3180/Arc-theme
+then use lxappearence
 
 # ohmyzsh
 ## dependencies
@@ -48,13 +53,16 @@ config config --local status.showUntrackedFiles no
 
 # misc
 sudo apt-get install firefox clementine vlc
+
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 sudo apt-get update 
 sudo apt-get install google-chrome-stable
 
+sudo apt-get install arandr 
+
 
 # qtractor
 sudo apt-get install guitarix cadence 
 
-qtractor qjackctl kxstudio-meta-audio-plugins-lv2 qmidinet calf-plugins hexter zam-plugins drumkv1-lv2 synthv1-lv2 samplv1-lv2 jalv lilv-utils guitarix artyfx swh-plugins fluid-soundfont-gm fluid-soundfont-gs zynaddsubfx helm audacious audacity vmpk cadence lv2-dev radium-compressor pizmidi-plugins oxefmsynth azr3-jack argotlunar yoshimi dpf-plugins qmidiarp drumgizmo
+qtractor qjackctl kxstudio-extensions qmidinet calf-plugins hexter zam-plugins drumkv1-lv2 synthv1-lv2 samplv1-lv2 lilv-utils guitarix artyfx swh-plugins fluid-soundfont-gm fluid-soundfont-gs zynaddsubfx helm audacious audacity vmpk radium-compressor pizmidi-plugins oxefmsynth argotlunar yoshimi qmidiarp drumgizmo
