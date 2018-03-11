@@ -84,7 +84,9 @@ set laststatus=2 " Always add status line to new windows and buffers
 
 let g:markdown_enable_spell_checking = 0 " Disable vim-markup spell check
 
-colorscheme desert-warm-256
+" colorscheme desert-warm-256
+colorscheme monokai
+hi Normal ctermbg=none
 " colorscheme iceberg
 " colorscheme lucius
 

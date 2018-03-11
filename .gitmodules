@@ -85,3 +85,6 @@
 [submodule "bumblebee-status"]
 	path = bumblebee-status
 	url = https://github.com/tobi-wan-kenobi/bumblebee-status
+[submodule ".vim/bundle/vim-sublime-monokai"]
+	path = .vim/bundle/vim-sublime-monokai
+	url = https://github.com/ErichDonGubler/vim-sublime-monokai

@@ -194,8 +194,8 @@ hide_edge_borders both
 # finds out, if available)
 bar {
   font pango: Inconsolata-dz for Powerline 11, Font Awesome
-# other nice status_command modules: sensor, nvidiagpu
-    status_command ~/bumblebee-status/bumblebee-status -m title cpu memory battery pasink date time -p time.format="%H:%M" date.format="%d-%m-%Y" -t solarized-powerline
+# other nice status_command modules: sensor, nvidiagpu, title
+    status_command ~/bumblebee-status/bumblebee-status -m cmus cpu memory battery pasink date time -p time.format="%H:%M" date.format="%d-%m-%Y" -t solarized-dark-awesome
     separator_symbol ◀
     tray_output primary
     position top
@@ -226,4 +226,3 @@ exec --no-startup-id VirtualBox
 for_window [title="Mixer - Qtractor"] floating disable; move up; resize grow height 17 px or 17 ppt;
 gaps inner 8
 workspace $ws8 gaps inner 0
-workspace $ws8 gaps outer 0
