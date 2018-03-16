@@ -77,7 +77,6 @@ set directory=/home/davide/.vim/swp,$HOME\swp,. " Linux, then Windows
 set number
 set relativenumber
 set ruler
-set guifont=Consolas:h11
 set linespace=0
 set scrolloff=3 " Keep 3 rows above and below the cursor row inside window limits
 set laststatus=2 " Always add status line to new windows and buffers

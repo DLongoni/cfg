@@ -13,7 +13,7 @@ get release from https://github.com/FortAwesome/Font-Awesome
 extract, put .ttf files (3 atm: fa-brands, fa-regular, fa-solid) in $HOME/.fonts
 
 # zsh, i3
-sudo apt-get install zsh i3 i3status i3blocks rofi thunar
+sudo apt-get install zsh i3 i3status i3blocks rofi thunar feh
 
 ## arc theme
 sudo apt-get install lxappearence 
@@ -52,7 +52,7 @@ config submodule update --init
 config config --local status.showUntrackedFiles no
 
 # misc
-sudo apt-get install firefox clementine vlc
+sudo apt-get install firefox clementine vlc cmus
 
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
