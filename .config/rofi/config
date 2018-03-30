@@ -1,0 +1,45 @@
+! "Enabled modi" Set from: Default
+rofi.modi:                           run
+! "Window opacity" Set from: File
+rofi.opacity:                        95
+! "Window width" Set from: Default
+rofi.width:                          35
+! "Number of lines" Set from: File
+rofi.lines:                          7
+! "Number of columns" Set from: Default
+rofi.columns:                        1
+! "Font to use" Set from: File
+rofi.font:                           Inconsolata 18
+! "Color scheme for normal row" Set from: Default
+! rofi.color-normal:                   #fdf6e3,#002b36,#eee8d5,#586e75,#eee8d5
+rofi.color-normal:                   #fdf6e3,#002b36,#eee8d5,#586e75,#eee8d5
+! "Color scheme for urgent row" Set from: Default
+! rofi.color-urgent:                   #fdf6e3,#dc322f,#eee8d5,#dc322f,#fdf6e3
+! "Color scheme for active row" Set from: Default
+! rofi.color-active:                   #fdf6e3,#268bd2,#eee8d5,#268bd2,#fdf6e3
+! "Color scheme window" Set from: Default
+! rofi.color-window:                   #fdf6e3,#002b36
+
+rofi.color-enabled: true
+!                  bg       text     lin      
+rofi.color-window: #002b36, #fdf6e3, #839496
+!                  bg       text     alt-bg   sel-bg   sel-text
+!rofi.color-normal: #002b36, #fdf6e3, #002b36, #073642, #fdf6e3
+rofi.color-normal: #002b36, #fdf6e3, #002b36, #93a1a1, #002b36
+
+
+
+! "Border width" Set from: File
+rofi.bw:                             0
+! "Row height (in chars)" Set from: File
+rofi.eh:                             1
+
+! "Margin between rows" Set from: Default
+rofi.line-margin:                    4
+! "Separator style (none, dash, solid)" Set from: Default
+rofi.separator-style:                none
+! "Hide scroll-bar" Set from: File
+rofi.hide-scrollbar:                 true
+
+! "Window Format. w (desktop name), t (title), n (name), r (role), c (class)" Set from: Default
+! rofi.window-format:                  {w}   {c}   {t}
