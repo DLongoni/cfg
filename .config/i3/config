@@ -196,7 +196,7 @@ bar {
   font pango: Inconsolata-dz for Powerline 11, Font Awesome
 # other nice status_command modules: sensor, nvidiagpu, title
     status_command ~/bumblebee-status/bumblebee-status -m mpd cpu memory pasink date time -p time.format="%H:%M" date.format="%d-%m-%Y" -t solarized-dark-awesome
-    separator_symbol ◀
+    # separator_symbol ◀
     tray_output primary
     position top
     colors {
@@ -209,7 +209,7 @@ bar {
     }
 }
 
-exec_always feh --bg-scale /home/davide/Pictures/wp.png
+exec_always feh --bg-scale /home/davide/Pictures/wp.jpg
 
 exec_always compton 
 
@@ -223,12 +223,12 @@ exec --no-startup-id firefox
 
 for_window [title="Mixer - Qtractor"] floating disable; move down;
 for_window [class="qtractor" title="(?!.*?Qtractor)^.*$"] floating enable; 
-# gaps inner 8
-# workspace $ws8 gaps inner 0
+gaps inner 8
+workspace $ws8 gaps inner 0
 
 for_window [class="^.*"] border pixel 1
 new_window 1pixel
 
 bindsym $mod+Shift+p exec thunar "/home/davide/dwhelper"
 bindsym $mod+Shift+o exec thunar "/media/davide/SAMSUNG/SW/AlgSoft Resizer 4.21"
-exec --no-startup-id xrandr --output VGA-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DVI-I-0 --off --output HDMI-0 --off
+exec --no-startup-id xrandr --output VGA-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-1 --off
