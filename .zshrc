@@ -100,10 +100,27 @@ alias proxytest="cd ~/DEV/proxy; python3 proxy.py"
 alias uuaa='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove && sudo apt-get autoclean'
 alias picclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(png\|jpg\)" -exec mv {} /media/davide/SAMSUNG/SW/AlgSoft\ Resizer\ 4.21/P \;'
 alias vidclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(flv\|3g\|mp4\|mov\|avi\|mpg\|mpeg\|webm\|m4v\|\)" -exec mv {} ~\/dwhelper \;'
-alias cpXiaomi='cp -rt /media/davide/XIAOMI/Internal\ shared\ storage/Music'
+alias cpXiaomi='cp -rt /media/davide/XIAOMI/Internal\ storage/Music'
 alias mountXiaomi='sudo jmtpfs -o allow_other /media/davide/XIAOMI'
+alias nvidiaFanSet='nvidia-settings -a "[gpu:0]/GPUFanControlState=1" && nvidia-settings -a "[fan:0]/GPUTargetFanSpeed=100"'
+alias nvidiaFanGet='nvidia-settings -q "[fan:0]/GPUTargetFanSpeed"'
 
 # VIRTUALENVWRAPPER
 VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
-source /usr/local/bin/virtualenvwrapper.sh
+source `which virtualenvwrapper.sh`
 export WORKON_HOME=$HOME/DEV/virtualenvs
+export XDG_CONFIG_HOME=$HOME/.config/
+
+# allows cockatrice to run on light themes prepending GTK_STYLE=... to the command
+QT_QPA_PLATFORMTHEME=gtk2
+
+function splitflac (){
+  if [ -z "$2" ]; then
+    cue_file=$1".cue"
+    flac_file=$1".flac"
+  else
+    cue_file=$1
+    flac_file=$2
+  fi
+  shnsplit -f $cue_file -t %n-%t -o flac $flac_file
+}
