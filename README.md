@@ -1,4 +1,5 @@
 ### desktop version
+#etstb
 # todel
 
 # cfg
