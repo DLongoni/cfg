@@ -1,4 +1,4 @@
-### desktop version
+### virtual version
 
 # cfg
 configuration dotfiles
