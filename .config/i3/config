@@ -220,17 +220,10 @@ exec --no-startup-id i3-msg 'workspace $ws7; exec termite -e ncmpcpp; workspace 
 exec --no-startup-id pulseaudio --start
 # exec --no-startup-id firefox
 
-for_window [title="Mixer - Qtractor"] floating disable; move down;
-for_window [class="qtractor" title="(?!.*?Qtractor)^.*$"] floating enable; 
 gaps inner 8
 workspace $ws8 gaps inner 0
 
 for_window [class="^.*"] border pixel 1
 new_window 1pixel
-
-bindsym $mod+Shift+p exec thunar "/home/davide/dwhelper"
-bindsym $mod+Shift+o exec thunar "/media/davide/SAMSUNG/SW/AlgSoft Resizer 4.21"
-
-exec --no-startup-id xrandr --output VGA-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --off
 
 exec --no-startup-id mpd /home/davide/.config/mpd/mpd.conf 

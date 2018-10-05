@@ -97,10 +97,11 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias uuaa='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove && sudo apt-get autoclean'
+alias mcss='cd ~/EventSpider/ && workon mcs &&  python3 -m Spider'
 
 TERM=xterm
 # VIRTUALENVWRAPPER
 VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
 source `which virtualenvwrapper.sh`
-export WORKON_HOME=$HOME/DEV/virtualenvs
+export WORKON_HOME=$HOME/Virtualenvs
 export XDG_CONFIG_HOME=$HOME/.config/
