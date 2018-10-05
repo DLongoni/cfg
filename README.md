@@ -1,3 +1,5 @@
+### desktop version
+
 # cfg
 configuration dotfiles
 
@@ -11,8 +13,12 @@ rm -rf fonts
 # install fontawesome 
 get release from https://github.com/FortAwesome/Font-Awesome
 extract, put .ttf files (3 atm: fa-brands, fa-regular, fa-solid) in $HOME/.fonts
+sudo apt-get install fonts-font-awesome
 
 # zsh, i3
+sudo add-apt-repository ppa:jasonpleau/rofi
+sudo apt-get update
+sudo apt-get install gnome-icon-theme-full
 sudo apt-get install zsh i3 i3status i3blocks rofi thunar feh compton
 sudo apt-get install python-dev
 sudo pip install pyyaml
