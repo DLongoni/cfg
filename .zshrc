@@ -102,8 +102,14 @@ alias picclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(png\|jpg\)" -e
 alias vidclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(flv\|3g\|mp4\|mov\|avi\|mpg\|mpeg\|webm\|m4v\|\)" -exec mv {} ~\/dwhelper \;'
 alias cpXiaomi='cp -rt /media/davide/XIAOMI/Internal\ shared\ storage/Music'
 alias mountXiaomi='sudo jmtpfs -o allow_other /media/davide/XIAOMI'
+alias mcss="cd ~/EventSpider; workon mcs; python3 -m Spider"
+alias mcsj='cd ~/EventSpider; workon mcs; python3 -m Judge'
+alias mcsd='cd ~/EventSpider; workon mcs; python3 -m Dumper'
 
+TERM=xterm
 # VIRTUALENVWRAPPER
 VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
 source /usr/local/bin/virtualenvwrapper.sh
-export WORKON_HOME=$HOME/DEV/virtualenvs
+export WORKON_HOME=$HOME/Virtualenvs
+export XDG_CONFIG_HOME=$HOME/.config/
+
