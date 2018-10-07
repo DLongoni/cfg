@@ -88,3 +88,6 @@
 [submodule ".vim/bundle/vim-sublime-monokai"]
 	path = .vim/bundle/vim-sublime-monokai
 	url = https://github.com/ErichDonGubler/vim-sublime-monokai
+[submodule ".vim/bundle/python-mode"]
+	path = .vim/bundle/python-mode
+	url = https://github.com/python-mode/python-mode.git
