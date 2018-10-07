@@ -70,6 +70,8 @@ set wildmenu
 "Directory for swp files
 set directory=/home/davide/.vim/swp,$HOME\swp,. " Linux, then Windows
 
+let g:pymode_python = 'python3'
+
 " }}}
 
 " GUI {{{
