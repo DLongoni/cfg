@@ -6,20 +6,14 @@ set nocompatible
 
 " Key Mappings {{{
 let mapleader=" "
-" Tab Navigation
 noremap <leader>k :bnext<CR>
 noremap <leader>j :bprevious<CR>
-" Ctrl+c to toggle highlight.
-nnoremap <c-c> :nohlsearch<cr>
+nnoremap <leader>c :nohlsearch<cr>
 " Don't jump when searching
 nnoremap * :keepjumps normal *``<cr>
 " Newline above or below cursor without moving cursor, staying in normal mode
 noremap <leader>m :set paste<CR>m`o<Esc>``:set nopaste<CR>
 noremap <leader>n :set paste<CR>m`O<Esc>``:set nopaste<CR>
-" Emmet zencoding remap
-nnoremap <leader>z <C-y>,
-inoremap <leader>z <C-y>,
-vnoremap <leader>z <C-y>,
 " Edit My Vimrc
 nnoremap <leader>ev :vs $MYVIMRC<cr>
 " Source My Vimrc
@@ -34,6 +28,17 @@ noremap <Up> <nop>
 " When pressing esc in multi cursor insert mode go back to multi cursor normal
 " mode instead of quitting multi cursor
 let g:multi_cursor_exit_from_insert_mode=0
+
+vnoremap < <gv 
+vnoremap > >gv 
+" add space after commas without a space (pep8)
+nnoremap <leader>sc :s/,\(\S\)\@=/, /g<cr> :nohlsearch<cr>
+nnoremap <leader>sa i<space><esc>la<space><esc>h
+nnoremap <leader>sd hxlxh
+nnoremap <leader>w  A<space><space>#<space>NOQA<esc>0
+" PyMode
+let g:pymode_rope = 1
+let g:pymode_rope_rename_bind = '<leader>f'
 " }}}
 
 " Basic Settings {{{
