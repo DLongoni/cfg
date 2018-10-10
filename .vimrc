@@ -3,6 +3,7 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 set nocompatible
+set t_Co=256
 
 " Key Mappings {{{
 let mapleader=" "
@@ -35,7 +36,8 @@ vnoremap > >gv
 nnoremap <leader>sc :s/,\(\S\)\@=/, /g<cr> :nohlsearch<cr>
 nnoremap <leader>sa i<space><esc>la<space><esc>h
 nnoremap <leader>sd hxlxh
-nnoremap <leader>w  A<space><space>#<space>NOQA<esc>0
+nnoremap <leader>n  A<space><space>#<space>NOQA<esc>0
+nnoremap <leader>w  <C-w>
 " PyMode
 let g:pymode_rope = 1
 let g:pymode_rope_rename_bind = '<leader>f'
@@ -76,7 +78,6 @@ set wildmenu
 set directory=/home/davide/.vim/swp,$HOME\swp,. " Linux, then Windows
 
 let g:pymode_python = 'python3'
-
 " }}}
 
 " GUI {{{
@@ -99,6 +100,7 @@ hi Normal ctermbg=none
 " set cursorline " too low contrast with desert colorscheme
 set splitright " vertical split puts the new window on the right
 
+hi ColorColumn ctermbg=237
 " gvim : switch off sounds
 set noerrorbells
 set visualbell t_vb=

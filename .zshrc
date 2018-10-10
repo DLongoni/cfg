@@ -102,8 +102,6 @@ alias picclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(png\|jpg\)" -e
 alias vidclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(flv\|3g\|mp4\|mov\|avi\|mpg\|mpeg\|webm\|m4v\|\)" -exec mv {} ~\/dwhelper \;'
 alias cpXiaomi='cp -rt /media/davide/XIAOMI/Internal\ shared\ storage/Music'
 alias mountXiaomi='sudo jmtpfs -o allow_other /media/davide/XIAOMI'
-alias nvidiaFanSet='nvidia-settings -a "[gpu:0]/GPUFanControlState=1" && nvidia-settings -a "[fan:0]/GPUTargetFanSpeed=100"'
-alias nvidiaFanGet='nvidia-settings -q "[fan:0]/GPUTargetFanSpeed"'
 
 TERM=xterm
 # VIRTUALENVWRAPPER
