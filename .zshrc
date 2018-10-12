@@ -100,9 +100,11 @@ alias uuaa='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremo
 alias mcss='cd ~/EventSpider/ && workon mcs &&  python3 -m Spider'
 alias mcsj='cd ~/EventSpider/ && workon mcs &&  python3 -m Judge'
 
-TERM=xterm
+TERM=xterm-256color
 # VIRTUALENVWRAPPER
 VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
 source `which virtualenvwrapper.sh`
 export WORKON_HOME=$HOME/Virtualenvs
 export XDG_CONFIG_HOME=$HOME/.config/
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=241'
+
