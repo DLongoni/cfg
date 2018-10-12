@@ -103,7 +103,7 @@ alias vidclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(flv\|3g\|mp4\|
 alias cpXiaomi='cp -rt /media/davide/XIAOMI/Internal\ shared\ storage/Music'
 alias mountXiaomi='sudo jmtpfs -o allow_other /media/davide/XIAOMI'
 
-TERM=xterm
+TERM=xterm-256color
 # VIRTUALENVWRAPPER
 VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
 source `which virtualenvwrapper.sh`
@@ -112,6 +112,7 @@ export XDG_CONFIG_HOME=$HOME/.config/
 
 # allows cockatrice to run on light themes prepending GTK_STYLE=... to the command
 QT_QPA_PLATFORMTHEME=gtk2
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=241'
 
 function splitflac (){
   if [ -z "$2" ]; then
