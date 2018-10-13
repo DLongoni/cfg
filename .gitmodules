@@ -16,12 +16,6 @@
 [submodule ".vim/bundle/desert-warm"]
 	path = .vim/bundle/desert-warm
 	url = https://github.com/rainux/vim-desert-warm-256
-[submodule ".vim/bundle/vim-lucius"]
-	path = .vim/bundle/vim-lucius
-	url = https://github.com/jonathanfilip/vim-lucius
-[submodule ".vim/bundle/iceberg"]
-	path = .vim/bundle/iceberg
-	url = https://github.com/cocopon/iceberg.vim/
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
@@ -79,9 +73,6 @@
 [submodule ".vim/bundle/vim-lilypond-integrator"]
 	path = .vim/bundle/vim-lilypond-integrator
 	url = https://github.com/DLongoni/vim-lilypond-integrator
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "bumblebee-status"]
 	path = bumblebee-status
 	url = https://github.com/tobi-wan-kenobi/bumblebee-status
