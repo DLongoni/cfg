@@ -19,9 +19,6 @@
 [submodule ".vim/bundle/vim-lucius"]
 	path = .vim/bundle/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius
-[submodule ".vim/bundle/iceberg"]
-	path = .vim/bundle/iceberg
-	url = https://github.com/cocopon/iceberg.vim/
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
@@ -64,9 +61,6 @@
 [submodule ".vim/bundle/vim-desert-warm-256"]
 	path = .vim/bundle/vim-desert-warm-256
 	url = https://github.com/rainux/vim-desert-warm-256
-[submodule ".vim/bundle/iceberg.vim"]
-	path = .vim/bundle/iceberg.vim
-	url = https://github.com/cocopon/iceberg.vim/
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
@@ -79,9 +73,6 @@
 [submodule ".vim/bundle/vim-lilypond-integrator"]
 	path = .vim/bundle/vim-lilypond-integrator
 	url = https://github.com/DLongoni/vim-lilypond-integrator
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "bumblebee-status"]
 	path = bumblebee-status
 	url = https://github.com/tobi-wan-kenobi/bumblebee-status
@@ -91,3 +82,9 @@
 [submodule ".vim/bundle/python-mode"]
 	path = .vim/bundle/python-mode
 	url = https://github.com/python-mode/python-mode.git
+[submodule ".vim/bundle/ultisnips"]
+	path = .vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets
