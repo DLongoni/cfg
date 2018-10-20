@@ -114,6 +114,10 @@ export XDG_CONFIG_HOME=$HOME/.config/
 QT_QPA_PLATFORMTHEME=gtk2
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=241'
 
+# sqlcmd 
+# https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017
+export PATH="$PATH:/opt/mssql-tools/bin"
+
 function splitflac (){
   if [ -z "$2" ]; then
     cue_file=$1".cue"
