@@ -36,11 +36,22 @@ vnoremap > >gv
 nnoremap <leader>sc :s/,\(\S\)\@=/, /g<cr> :nohlsearch<cr>
 nnoremap <leader>sa i<space><esc>la<space><esc>h
 nnoremap <leader>sd hxlxh
-nnoremap <leader>n  A<space><space>#<space>NOQA<esc>0
+nnoremap <leader>u  A<space><space>#<space>NOQA<esc>0
 nnoremap <leader>w  <C-w>
-" PyMode
+" }}}
+
+" {{{ REGION: PyMode
 let g:pymode_rope = 1
 let g:pymode_rope_rename_bind = '<leader>f'
+let g:pymode_rope_complete_on_dot = 0
+set completeopt-=preview
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
+let g:pymode_lint_ignore = ['E221']
 " }}}
 
 " Basic Settings {{{
