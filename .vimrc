@@ -143,3 +143,24 @@ if has('win32')
   endif
 endif
 " }}}
+
+nnoremap <leader>l :call LilyCompile()<CR>:redraw!<CR>
+function! LilyCompile()
+  let fname=expand('%:t')
+  let fext=expand('%:e')
+  if fext != "ly"
+    echom fname . " is not a lilypond file"
+    return
+  endif
+  echom 'Compiling lilypond file ' . fname 
+  silent let out_ly = system('lilypond -s ' . fname)
+  let out_ly_len = len(out_ly)
+  if out_ly_len != 0
+    vnew
+    silent put =out_ly
+    normal ggdd
+  else
+    echom fname . ' succesfully compiled!'
+  endif
+  silent execute '!pkill -HUP mupdf'
+endfunction
