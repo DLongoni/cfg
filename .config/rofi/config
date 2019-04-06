@@ -1,0 +1,52 @@
+! {{{ GENERAL
+
+! Enabled modi 
+rofi.modi:                           run
+
+! Window opacity 
+rofi.opacity:                        95
+
+! Window width 
+rofi.width:                          35
+
+! Number of lines 
+rofi.lines:                          7
+
+! Number of columns 
+rofi.columns:                        1
+
+| Font to use 
+rofi.font:                           Inconsolata 14
+
+! }}}
+
+! {{{ COLORS
+
+rofi.color-enabled: true
+
+!                  bg       borders  sep      
+rofi.color-window: #002b36, #93a1a1, #93a1a1
+
+!                  bg       text     alt-bg   sel-bg   sel-text
+rofi.color-normal: #002b36, #fdf6e3, #073642, #93a1a1, #002b36
+
+! }}}
+
+! {{{ WINDOW APPEARANCE
+
+! Window border width
+rofi.bw:                2     
+
+! Row height [unit = character height]
+rofi.eh:                1
+
+! Inner window padding
+rofi.padding:           0     
+
+! Hide scrollbar
+rofi.hide-scrollbar:    true
+
+! Separator style (none, dash, solid)
+rofi.separator-style:   dash
+
+! }}}
