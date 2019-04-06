@@ -41,8 +41,8 @@
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/gabrielelana/vim-markdown
 [submodule ".vim/bundle/vim-desert-warm-256"]
-	path = .vim/bundle/vim-desert-warm-256
-	url = https://github.com/rainux/vim-desert-warm-256
+  path = .vim/bundle/vim-desert-warm-256
+  url = https://github.com/rainux/vim-desert-warm-256
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
