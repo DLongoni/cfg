@@ -96,15 +96,18 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias zshconfig="vim ~/.zshrc"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias proxytest="cd ~/DEV/proxy; python3 proxy.py"
 alias uuaa='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove && sudo apt-get autoclean'
-alias mcss='cd ~/EventSpider/ && workon mcs &&  python3 -m Spider'
-alias mcsj='cd ~/EventSpider/ && workon mcs &&  python3 -m Judge'
+alias picclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(png\|jpg\|jpeg\)" -exec mv {} /media/davide/SAMSUNG/SW/AlgSoft\ Resizer\ 4.21/P \;'
+alias vidclean='find ~/Desktop/ -maxdepth 1 -type f -regex ".*\.\(flv\|3g\|mp4\|mov\|avi\|mpg\|mpeg\|webm\|m4v\|mp4\|\)" -exec mv {} ~\/dwhelper \;'
+alias cpXiaomi='cp -rt /media/davide/XIAOMI/Internal\ shared\ storage/Music'
+alias mountXiaomi='sudo jmtpfs -o allow_other /media/davide/XIAOMI'
 
 TERM=xterm-256color
 # VIRTUALENVWRAPPER
-VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
+export WORKON_HOME=$HOME/DEV/virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=`which python3`
 source `which virtualenvwrapper.sh`
-export WORKON_HOME=$HOME/Virtualenvs
+
 export XDG_CONFIG_HOME=$HOME/.config/
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=241'
-

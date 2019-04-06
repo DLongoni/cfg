@@ -38,16 +38,19 @@ nnoremap <leader>sa i<space><esc>la<space><esc>h
 nnoremap <leader>sd hxlxh
 nnoremap <leader>u  A<space><space>#<space>NOQA<esc>0
 nnoremap <leader>w  <C-w>
-" PyMode
+" }}}
+
+" {{{ REGION: PyMode
 let g:pymode_rope = 1
 let g:pymode_rope_rename_bind = '<leader>f'
-
+let g:pymode_rope_complete_on_dot = 0
+set completeopt-=preview
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
-
+let g:pymode_lint_ignore = ['E221']
 " }}}
 
 " Basic Settings {{{
@@ -85,9 +88,7 @@ set wildmenu
 set directory=/home/davide/.vim/swp,$HOME\swp,. " Linux, then Windows
 
 let g:pymode_python = 'python3'
-
 " }}}
-
 
 " GUI {{{
 "line numbers
@@ -109,6 +110,7 @@ hi Normal ctermbg=none
 " set cursorline " too low contrast with desert colorscheme
 set splitright " vertical split puts the new window on the right
 
+hi ColorColumn ctermbg=237
 " gvim : switch off sounds
 set noerrorbells
 set visualbell t_vb=
@@ -140,4 +142,24 @@ if has('win32')
   endif
 endif
 " }}}
-hi ColorColumn ctermbg=237
+
+nnoremap <leader>l :call LilyCompile()<CR>:redraw!<CR>
+function! LilyCompile()
+  let fname=expand('%:t')
+  let fext=expand('%:e')
+  if fext != "ly"
+    echom fname . " is not a lilypond file"
+    return
+  endif
+  echom 'Compiling lilypond file ' . fname 
+  silent let out_ly = system('lilypond -s ' . fname)
+  let out_ly_len = len(out_ly)
+  if out_ly_len != 0
+    vnew
+    silent put =out_ly
+    normal ggdd
+  else
+    echom fname . ' succesfully compiled!'
+  endif
+  silent execute '!pkill -HUP mupdf'
+endfunction

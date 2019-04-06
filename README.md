@@ -1,4 +1,4 @@
-### virtual version
+### desktop version
 
 # cfg
 configuration dotfiles
@@ -76,6 +76,11 @@ sudo apt-get install google-chrome-stable
 
 sudo apt-get install arandr 
 
+# picard
+naming
+$firstalphachar(%albumartistsort%,#)/$replace($if2(%albumartistsort%,%artistsort%),&,and)
+/$left(%date%,4) - %album%/$num(%tracknumber%,2) - %title%
+2
 
 # qtractor
 install kxstudio repo from

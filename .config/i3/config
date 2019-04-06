@@ -195,6 +195,7 @@ hide_edge_borders both
 bar {
   font pango: Inconsolata-dz for Powerline 11, Font Awesome
     status_command ~/bumblebee-status/bumblebee-status -m mpd cpu memory pasink date time -p time.format="%H:%M" date.format="%d-%m-%Y" -t solarized-dark-awesome
+    # status_command i3blocks -c ~/.config/i3/i3blocks.conf
     # separator_symbol ◀
     tray_output primary
     position top
@@ -216,14 +217,23 @@ bindsym $mod+m move workspace to output left
 
 exec --no-startup-id google-chrome
 exec --no-startup-id i3-msg 'workspace $ws1; exec termite'
-exec --no-startup-id i3-msg 'workspace $ws7; exec termite -e ncmpcpp; workspace $ws1'
+exec --no-startup-id i3-msg 'workspace $ws7; exec --no-startup-id mpd; exec termite -e ncmpcpp; workspace $ws1'
 exec --no-startup-id pulseaudio --start
 # exec --no-startup-id firefox
 
+for_window [class="Matplotlib"] floating enable; 
+
+for_window [title="Mixer - Qtractor"] floating disable; move down;
+for_window [class="qtractor" title="(?!.*?Qtractor)^.*$"] floating enable; 
 gaps inner 8
 workspace $ws8 gaps inner 0
 
 for_window [class="^.*"] border pixel 1
 new_window 1pixel
 
-exec --no-startup-id mpd /home/davide/.config/mpd/mpd.conf 
+bindsym $mod+Shift+p exec thunar "/home/davide/dwhelper"
+bindsym $mod+Shift+o exec thunar "/media/davide/SAMSUNG/SW/AlgSoft Resizer 4.21"
+
+exec --no-startup-id xrandr --output VGA-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-D-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --off
+
+# exec --no-startup-id mpd /home/davide/.config/mpd/mpd.conf 
