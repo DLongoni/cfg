@@ -13,15 +13,6 @@
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
-[submodule ".vim/bundle/desert-warm"]
-	path = .vim/bundle/desert-warm
-	url = https://github.com/rainux/vim-desert-warm-256
-[submodule ".vim/bundle/vim-lucius"]
-	path = .vim/bundle/vim-lucius
-	url = https://github.com/jonathanfilip/vim-lucius
-[submodule ".vim/bundle/iceberg"]
-	path = .vim/bundle/iceberg
-	url = https://github.com/cocopon/iceberg.vim/
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
@@ -34,21 +25,12 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular
-[submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic
 [submodule ".vim/bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule ".vim/bundle/html5"]
-	path = .vim/bundle/html5
-	url = https://github.com/othree/html5.vim
-[submodule ".vim/bundle/phpcomplete"]
-	path = .vim/bundle/phpcomplete
-	url = https://github.com/shawncplus/phpcomplete.vim
 [submodule ".vim/bundle/emmet-vim"]
 	path = .vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim
@@ -58,15 +40,9 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/gabrielelana/vim-markdown
-[submodule ".vim/bundle/vim-lilypond"]
-	path = .vim/bundle/vim-lilypond
-	url = https://github.com/DLongoni/vim-lilypond-integrator
 [submodule ".vim/bundle/vim-desert-warm-256"]
-	path = .vim/bundle/vim-desert-warm-256
-	url = https://github.com/rainux/vim-desert-warm-256
-[submodule ".vim/bundle/iceberg.vim"]
-	path = .vim/bundle/iceberg.vim
-	url = https://github.com/cocopon/iceberg.vim/
+  path = .vim/bundle/vim-desert-warm-256
+  url = https://github.com/rainux/vim-desert-warm-256
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
@@ -79,12 +55,18 @@
 [submodule ".vim/bundle/vim-lilypond-integrator"]
 	path = .vim/bundle/vim-lilypond-integrator
 	url = https://github.com/DLongoni/vim-lilypond-integrator
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "bumblebee-status"]
 	path = bumblebee-status
 	url = https://github.com/tobi-wan-kenobi/bumblebee-status
 [submodule ".vim/bundle/vim-sublime-monokai"]
 	path = .vim/bundle/vim-sublime-monokai
 	url = https://github.com/ErichDonGubler/vim-sublime-monokai
+[submodule ".vim/bundle/python-mode"]
+	path = .vim/bundle/python-mode
+	url = https://github.com/python-mode/python-mode.git
+[submodule ".vim/bundle/ultisnips"]
+	path = .vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets
