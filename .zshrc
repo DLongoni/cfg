@@ -119,16 +119,16 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=241'
 # https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017
 export PATH="$PATH:/opt/mssql-tools/bin"
 
-function splitflac (){
-  if [ -z "$2" ]; then
-    cue_file=$1".cue"
-    flac_file=$1".flac"
-  else
-    cue_file=$1
-    flac_file=$2
-  fi
-  shnsplit -f $cue_file -t %n-%t -o flac $flac_file
-}
+# function splitflac (){
+#   if [ -z "$2" ]; then
+#     cue_file=$1".cue"
+#     flac_file=$1".flac"
+#   else
+#     cue_file=$1
+#     flac_file=$2
+#   fi
+#   shnsplit -f $cue_file -t %n-%t -o flac $flac_file
+# }
 
 function to-music-usb(){
   if [ -z "$1" ]; then

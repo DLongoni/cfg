@@ -194,8 +194,9 @@ hide_edge_borders both
 # finds out, if available)
 bar {
   font pango: Inconsolata-dz for Powerline 11, Font Awesome
-    status_command ~/bumblebee-status/bumblebee-status -m mpd cpu memory pasink date time -p time.format="%H:%M" date.format="%d-%m-%Y" -t solarized-dark-awesome
-    # status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    status_command ~/bumblebee-status/bumblebee-status -m mpd cpu memory pasink date time -p time.format="%H:%M" date.format="%d-%m-%Y" -t solarized-dark-awesome 
+    # status_command ~/bumblebee-status/bumblebee-status -m memory pasink -t solarized-dark-awesome -d
+    # status_command SCRIPT_DIR=~/i3blocks-contrib i3blocks -c ~/.config/i3blocks/config
     # separator_symbol ◀
     tray_output primary
     position top
@@ -222,6 +223,8 @@ exec --no-startup-id pulseaudio --start
 # exec --no-startup-id firefox
 
 for_window [class="Matplotlib"] floating enable; 
+for_window [class="vlc"] floating enable; 
+for_window [class="vlc"] floating_maximum_size 1400x1000;
 
 for_window [title="Mixer - Qtractor"] floating disable; move down;
 for_window [class="qtractor" title="(?!.*?Qtractor)^.*$"] floating enable; 
