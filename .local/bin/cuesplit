@@ -27,7 +27,7 @@ ________________________________________
 "
 cd "$DIR"
 TYPE=`ls -t1`
-shnfrmt='%n - %p - %t'
+shnfrmt='%n-%t'
 
 case $TYPE in
     *.ape*)
