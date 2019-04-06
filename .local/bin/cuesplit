@@ -32,13 +32,13 @@ shnfrmt='%n-%t'
 case $TYPE in
     *.ape*)
         shnsplit -f *.cue -o flac -t "$shnfrmt" *.ape
-        cuetag *.cue track*.flac
+        cuetag *.cue *.flac
         exit
         ;;
 
     *.flac*)
         shnsplit -f *.cue -o flac -t "$shnfrmt" *.flac
-        cuetag *.cue track*.flac
+        cuetag *.cue *.flac
         exit
         ;;
 
@@ -56,13 +56,13 @@ case $TYPE in
 
     *.wv*)
         shnsplit -f *.cue -o flac -t "$shnfrmt" *.wv
-        cuetag *.cue track*.flac
+        cuetag *.cue *.flac
         exit
         ;;
 
     *.wav*)
         shnsplit -f *.cue -o flac -t "$shnfrmt" *.wav
-        cuetag *.cue track*.flac
+        cuetag *.cue *.flac
         exit
         ;;
 
