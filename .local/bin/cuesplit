@@ -32,37 +32,31 @@ shnfrmt='%n-%t'
 case $TYPE in
     *.ape*)
         shnsplit -f *.cue -o flac -t "$shnfrmt" *.ape
-        cuetag *.cue *.flac
         exit
         ;;
 
     *.flac*)
         shnsplit -f *.cue -o flac -t "$shnfrmt" *.flac
-        cuetag *.cue *.flac
         exit
         ;;
 
     *.mp3*)
         mp3splt -no "@n @p - @t (split)" -c *.cue *.mp3
-        cuetag *.cue *split\).mp3
         exit
         ;;
 
     *.ogg*)
         mp3splt -no "@n @p - @t (split)" -c *.cue *.ogg
-        cuetag *.cue *split\).ogg
         exit
         ;;
 
     *.wv*)
         shnsplit -f *.cue -o flac -t "$shnfrmt" *.wv
-        cuetag *.cue *.flac
         exit
         ;;
 
     *.wav*)
         shnsplit -f *.cue -o flac -t "$shnfrmt" *.wav
-        cuetag *.cue *.flac
         exit
         ;;
 
