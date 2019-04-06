@@ -41,12 +41,15 @@ nnoremap <leader>w  <C-w>
 " PyMode
 let g:pymode_rope = 1
 let g:pymode_rope_rename_bind = '<leader>f'
+let g:pymode_rope_complete_on_dot = 0
+set completeopt-=preview
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
+let g:pymode_lint_ignore = ['E221']
 
 " }}}
 
