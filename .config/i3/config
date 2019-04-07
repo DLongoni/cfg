@@ -208,7 +208,7 @@ bar {
     }
 }
 
-exec_always feh --bg-scale /home/davide/Pictures/wp.jpg
+exec_always feh --bg-scale /home/davide/Pictures/wp.png
 
 exec_always compton 
 
