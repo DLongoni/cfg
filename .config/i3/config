@@ -224,7 +224,7 @@ exec --no-startup-id pulseaudio --start
 
 for_window [class="Matplotlib"] floating enable; 
 for_window [class="vlc"] floating enable; 
-for_window [class="vlc"] floating_maximum_size 1400x1000;
+for_window [class="vlc"] floating_maximum_size 400 x 200;
 
 for_window [title="Mixer - Qtractor"] floating disable; move down;
 for_window [class="qtractor" title="(?!.*?Qtractor)^.*$"] floating enable; 
