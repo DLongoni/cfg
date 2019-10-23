@@ -63,7 +63,7 @@
 	url = https://github.com/ErichDonGubler/vim-sublime-monokai
 [submodule ".vim/bundle/python-mode"]
 	path = .vim/bundle/python-mode
-	url = https://github.com/python-mode/python-mode.git
+	url = https://python-mode/python-mode.git
 [submodule ".vim/bundle/ultisnips"]
 	path = .vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
