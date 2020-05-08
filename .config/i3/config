@@ -100,8 +100,8 @@ set $ws4 "4: VirtualBox "
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7: Music "
-set $ws8 "8: Qtractor "
-set $ws9 "9: Cockatrice "
+set $ws8 "8: DAW "
+set $ws9 "9: Mixer "
 set $ws10 "10"
 
 # switch to workspace
@@ -132,11 +132,31 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 assign [class="Google-chrome"] $ws2
 assign [class="Firefox"] $ws3
 assign [class="VirtualBox"] $ws4
-assign [class="Rhythmbox"] $ws7
-assign [class="Clementine"] $ws7
-assign [class="qtractor"] $ws8
+
+assign [class="qtractor" title="^(?!Mixer - Qtractor$)"] $ws8
+assign [class="qtractor" title="Mixer - Qtractor"] $ws9
+
+assign [class="REAPER" title="^(?!Mixer$)"] $ws8
+assign [class="REAPER" title="^Mixer$"] $ws9
+
 assign [class="Cockatrice"] $ws9
 
+# Floating
+for_window [class="REAPER" title="^Mixer$"] floating disable
+for_window [class="Matplotlib"] floating enable; 
+for_window [class="vlc"] floating enable, resize set 600px 400px;
+
+for_window [title="Mixer - Qtractor"] floating disable; 
+for_window [class="qtractor" title="(?!.*?Qtractor)^.*$"] floating enable; 
+
+# Gaps
+gaps inner 8
+workspace $ws8 gaps inner 0
+workspace $ws9 gaps inner 0
+
+# Borders
+for_window [class="^.*"] border pixel 1
+new_window 1pixel
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -221,18 +241,6 @@ exec --no-startup-id i3-msg 'workspace $ws1; exec termite'
 exec --no-startup-id i3-msg 'workspace $ws7; exec --no-startup-id mpd; exec termite -e ncmpcpp; workspace $ws1'
 exec --no-startup-id pulseaudio --start
 # exec --no-startup-id firefox
-
-for_window [class="Matplotlib"] floating enable; 
-for_window [class="vlc"] floating enable; 
-for_window [class="vlc"] floating_maximum_size 400 x 200;
-
-for_window [title="Mixer - Qtractor"] floating disable; move down;
-for_window [class="qtractor" title="(?!.*?Qtractor)^.*$"] floating enable; 
-gaps inner 8
-workspace $ws8 gaps inner 0
-
-for_window [class="^.*"] border pixel 1
-new_window 1pixel
 
 bindsym $mod+Shift+p exec thunar "/home/davide/dwhelper"
 bindsym $mod+Shift+o exec thunar "/media/davide/SAMSUNG/SW/AlgSoft Resizer 4.21"
