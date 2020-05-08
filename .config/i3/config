@@ -133,11 +133,12 @@ assign [class="Google-chrome"] $ws2
 assign [class="Firefox"] $ws3
 assign [class="VirtualBox"] $ws4
 
-assign [class="qtractor" title="^(?!Mixer - Qtractor$)"] $ws8
+# assign [class="qtractor" title="^(?!Mixer - Qtractor$)"] $ws8
 assign [class="qtractor" title="Mixer - Qtractor"] $ws9
+assign [class="qtractor" title="- Qtractor"] $ws8
 
-assign [class="REAPER" title="^(?!Mixer$)"] $ws8
 assign [class="REAPER" title="^Mixer$"] $ws9
+assign [class="REAPER" title="REAPER"]  $ws8
 
 assign [class="Cockatrice"] $ws9
 
