@@ -147,20 +147,22 @@ endif
 nnoremap <leader>l :call LilyCompile()<CR>:redraw!<CR>
 function! LilyCompile()
   let fname=expand('%:t')
+  let fnameabs=expand('%:p')
+  let fpath=expand('%:p:h')
   let fext=expand('%:e')
   if fext != "ly"
     echom fname . " is not a lilypond file"
     return
   endif
-  echom 'Compiling lilypond file ' . fname 
-  silent let out_ly = system('lilypond -s ' . fname)
+  echom 'Compiling lilypond file ' . fnameabs
+  silent let out_ly = system('lilypond -s -o'. fpath . ' ' . fnameabs)
   let out_ly_len = len(out_ly)
   if out_ly_len != 0
     vnew
     silent put =out_ly
     normal ggdd
   else
-    echom fname . ' succesfully compiled!'
+    echom fnameabs . ' succesfully compiled!'
   endif
   silent execute '!pkill -HUP mupdf'
 endfunction
