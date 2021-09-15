@@ -89,6 +89,18 @@ set wildmenu
 set directory=/home/davide/.vim/swp,$HOME\swp,. " Linux, then Windows
 
 let g:pymode_python = 'python3'
+
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
+nmap <silent> gd <Plug>(coc-definition)
+
+let g:closetag_filenames = '*.html,*.jsx,*.tsx,*.vue'
+
+let g:closetag_regions =  {
+  \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+  \ 'javascript.jsx': 'jsxRegion',
+  \ }
 " }}}
 
 " GUI {{{
