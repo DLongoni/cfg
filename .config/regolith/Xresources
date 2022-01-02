@@ -1,0 +1,35 @@
+! -- UNCLUTTER
+! i3-wm.program.unclutter: /usr/bin/regolit-ftue /usr/bin/unclutter -b --timeout 5
+
+! -- CURSOR
+Xcursor.size: 36
+Xcursor.theme: DMZ (White)
+
+! -- BAR
+i3-wm.bar.separator: |
+i3xrocks.value.mediaplayerwidth: 120
+
+! -- WALLPAPAER
+gnome.wallpaper: /home/davide/Pictures/wp.jpg
+
+! -- STARTUP
+i3-wm.program.1: google-chrome
+
+! -- TERMINAL
+gnome.terminal.font:	JetBrains Mono 12
+
+! -- WS NAMES
+i3-wm.bar.stripworkspacenumbers: no
+i3-wm.workspace.01.name: 1: Term 
+i3-wm.workspace.02.name: 2: Chrome 
+i3-wm.workspace.03.name: 3: Firefox 
+i3-wm.workspace.04.name: 4: VirtualBox 
+i3-wm.workspace.05.name: 5: Spoty 
+i3-wm.workspace.06.name: 6
+i3-wm.workspace.07.name: 7: Music 
+i3-wm.workspace.08.name: 8: DAW 
+i3-wm.workspace.09.name: 9: Mixer 
+
+! -- GAPS
+i3-wm.gaps.inner.size: 8
+i3-wm.gaps.smart: inverse_outer
