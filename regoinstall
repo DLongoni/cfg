@@ -1,0 +1,205 @@
+#### Regolith install
+# sudo apt-get dist-upgrade
+
+#### Various basic installs
+sudo apt-get install 
+git
+curl
+arandr 
+mpd 
+mpc 
+ncmpcpp
+zsh
+vlc
+virtualbox
+virtualenv
+python3-pip
+nfs-common
+lilypond
+mupdf
+vim-gtk
+ffmpegthumbnailer    
+picard
+gucharmap
+audacity
+libreoffice
+shntools
+flac
+
+#### Switch to zsh
+chsh -s $(which zsh)
+restart shell or reboot
+
+#### OhMyZsh
+when using zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+#### Clone config
+git clone --bare https://github.com/DLongoni/cfg $HOME/.cfg 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+config checkout
+config submodule update --init --recursive
+config config --local status.showUntrackedFiles no
+
+#### git
+git config --global user.email dave88@focusinformatica.com
+git config --global user.name "DLongoni"
+
+#### Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+#### Calibre
+sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+
+#### Spotify
+curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
+sudo rm -rf /etc/apt/sources.list.d/spotify.list
+# adlbock -> https://github.com/abba23/spotify-adblock-linux
+
+#### Virtualenvwrapper via pip3
+sudo pip3 install virtualenvwrapper
+
+#### Nas 
+cd /media/davide
+sudo mkdir Music
+sudo mkdir Archive
+sudo mkdir Downloads
+sudo mkdir Video
+
+192.168.1.110:/volume2/archive /media/davide/SYNOLOGY/Archive nfs rw,intr,soft,user=davide,async,x-systemd.requires=NetworkManager.service 0 0
+
+#### mpd user service
+sudo systemctl disable mpd.socket
+sudo systemctl disable mpd.service
+systemctl --user enable mpd
+
+#### Wine
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
+sudo apt update
+sudo apt install --install-recommends winehq-stable
+wine --version
+winecfg
+
+#### Cursors
+# sudo apt install dmz-cursor-theme 
+# Change in both xresources and gsettings
+# gsettings set org.gnome.desktop.interface cursor-size 36
+# gsettings set org.gnome.desktop.interface cursor-theme DMZ\ \(White\)
+# Xcursor.size: 36
+# Xcursor.theme: DMZ (White)
+
+#### NVidia Drivers
+# lshw -c video
+# se in "configuration" c'è nouveau devo scaricare il proprietario nvidia che è recommended qui:
+# ubuntu-drivers devices 
+
+#### Compton
+# Analogo per shadow
+# Rofi trasparente:
+# opacity-rule = [ "95:class_g = 'Rofi'" ]
+# use-damage = false; # If set to true this causes flickering in VirtualBox
+
+# Openssl
+# openssl aes-256-cbc -a -in enc -d -out o.tar
+# OR
+# openssl aes-256-cbc -a -in enc -d -out o.tar -md md5
+
+# Pulseaudio delay Steinberg UR44
+# edit ~/.config/pulse/default.pa or /etc/pulse/default.pa
+# commentare # load-module module-suspend-on-idle
+
+#### VM mcs
+# clone config tale e quale così come install vari. poi virualenv. poi clone da repo:
+# sudo apt install net-tools
+# settings network bridged e volendo clipboard bidirectional
+# remote.origin.url=ssh://davide@192.168.1.110:3128/volume2/git_repos/EventSpider
+# remote.origin.url=ssh://davide@192.168.1.110:3128/volume2/git_repos/EventLearner
+# hosts locale aggiungo 192.168.1.112   dev.milanochesuona.it
+# sudo apt install php php-cli unzip phpunit
+#
+# sudo apt-get install mysql-server 
+# sudo mysql_secure_installation utility
+# login con sudo e creo db mcs_test e user mcs_user
+# GRANT ALL PRIVILEGES ON mcs_test.*  TO 'mcs_user'@'localhost';
+# grant SYSTEM_USER on *.* to 'mcs_user'@'localhost';
+# grant SHOW_ROUTINE on *.* to 'mcs_user'@'localhost';
+# poi importo con 
+# sudo mysql -uroot -pJesusin0 mcs_test < mcs20201125_routines.sql
+# ma probabilmetne va bene anche import come mcs_test
+# testare con
+# CALL BandGetList();
+#
+# creare milanochesuona.conf e usare sudo a2ensite milanochesuona.conf
+# <VirtualHost *:80>
+#     ServerName dev.milanochesuona.it
+#     ServerAlias dev.milanochesuona
+#     ServerAdmin webmaster@localhost
+#     DocumentRoot /var/www/milanochesuona/html
+#     ErrorLog ${APACHE_LOG_DIR}/error.log
+#     CustomLog ${APACHE_LOG_DIR}/access.log combined
+# </VirtualHost>
+# sudo a2ensite milanochesuona.conf
+# systemctl reload apache2
+#  
+# install composer
+# poi nella cartella /var/www/milanochesuona fai composer install, non deve servire sudo
+# poi in /var/www creare mcs_config.ini con contenuto
+  # [DbConn]
+  # 1 host = "localhost"
+  # 2 db = "mcs_test"
+  # 3 user = "mcs_user"
+  # 4 password = "pw"
+# e anche questo chown e chmod. testare con php-f src/test.php
+# sudo pip3 install ipyton pymysql sklearn nltk BeautifulSoup4 lxml pandas
+#
+#
+#### Perfo Audio
+# lowlat kernel
+# sudo apt-get install linux-lowlatency
+# verifico con 
+# uname -a
+#
+# Governor performance Gpu
+# sudo apt install cpufrequtils
+# echo 'GOVERNOR="performance"' | sudo tee /etc/default/cpufrequtils
+# sudo systemctl disable ondemand
+# verifico con 
+# cpufreq-info
+# 
+# swappiness e inofity
+# aggiungo in fondo a /etc/sysctl.conf
+# vm.swappiness=10
+# fs.inotify.max_user_watches = 524288
+#
+# check automatico con https://github.com/raboof/realtimeconfigquickscan
+#
+# rt e memoria
+# aggiungo a /etc/security/limits.conf
+# vm.swappiness=10
+# fs.inotify.max_user_watches = 524288
+
+#### Greeter wp
+# sudo vim /etc/lightdm/lightdm-gtk-greeter.conf
+# set "background"
+
+#### VST
+# manual dpkg install: helm vital sitala
+# linvst install deb from https://github.com/osxmidi/LinVst/releases
+# so file in /usr/share/LinVst/64bit-32bit
+# SWS
+# https://www.sws-extension.org/download/pre-release/
+# Reapack
+# https://reapack.com/user-guide
+
+#### Misc
+# vlc -> Preferences -> Input/Codecs -> Disable hw decoding
+# loudness bs1770gain -isrmt *
+#
+#### Font GTK
+# gsettings set org.gnome.desktop.interface font-name 'Tahoma 12'
+# gsettings set org.gnome.desktop.interface document-font-name 'Tahoma 12'
