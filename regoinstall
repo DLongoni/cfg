@@ -2,29 +2,7 @@
 # sudo apt-get dist-upgrade
 
 #### Various basic installs
-sudo apt-get install 
-git
-curl
-arandr 
-mpd 
-mpc 
-ncmpcpp
-zsh
-vlc
-virtualbox
-virtualenv
-python3-pip
-nfs-common
-lilypond
-mupdf
-vim-gtk
-ffmpegthumbnailer    
-picard
-gucharmap
-audacity
-libreoffice
-shntools
-flac
+sudo apt-get install git curl arandr mpd mpc ncmpcpp zsh vlc virtualbox virtualenv python3-pip nfs-common lilypond mupdf vim-gtk ffmpegthumbnailer    picard gucharmap audacity libreoffice shntools flac nodejs npm
 
 #### Switch to zsh
 chsh -s $(which zsh)
@@ -37,6 +15,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #### Clone config
 git clone --bare https://github.com/DLongoni/cfg $HOME/.cfg 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+rm ~/.zshrc
 config checkout
 config submodule update --init --recursive
 config config --local status.showUntrackedFiles no
@@ -63,11 +42,8 @@ sudo rm -rf /etc/apt/sources.list.d/spotify.list
 sudo pip3 install virtualenvwrapper
 
 #### Nas 
-cd /media/davide
-sudo mkdir Music
-sudo mkdir Archive
-sudo mkdir Downloads
-sudo mkdir Video
+cd /media/davide/SYNOLOGY
+sudo mkdir Music Archive Downloads Video
 
 192.168.1.110:/volume2/archive /media/davide/SYNOLOGY/Archive nfs rw,intr,soft,user=davide,async,x-systemd.requires=NetworkManager.service 0 0
 
@@ -177,15 +153,11 @@ winecfg
 # fs.inotify.max_user_watches = 524288
 #
 # check automatico con https://github.com/raboof/realtimeconfigquickscan
-#
-# rt e memoria
-# aggiungo a /etc/security/limits.conf
-# vm.swappiness=10
-# fs.inotify.max_user_watches = 524288
 
 #### Greeter wp
+# cp /media/davide/SYNOLOGY/Archive/Foto/wp.jpg ~/Pictures/
 # sudo vim /etc/lightdm/lightdm-gtk-greeter.conf
-# set "background"
+# background=/home/davide/Pictures/wp.jpg
 
 #### VST
 # manual dpkg install: helm vital sitala
