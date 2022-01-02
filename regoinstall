@@ -203,3 +203,6 @@ winecfg
 #### Font GTK
 # gsettings set org.gnome.desktop.interface font-name 'Tahoma 12'
 # gsettings set org.gnome.desktop.interface document-font-name 'Tahoma 12'
+#
+# Split audio
+# shnsplit -f *.cue -o flac -t '%n - %p - %t' *.flac
