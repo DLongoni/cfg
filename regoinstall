@@ -2,7 +2,7 @@
 # sudo apt-get dist-upgrade
 
 #### Various basic installs
-sudo apt-get install git curl arandr mpd mpc ncmpcpp zsh vlc virtualbox virtualenv python3-pip nfs-common lilypond mupdf vim-gtk ffmpegthumbnailer    picard gucharmap audacity libreoffice shntools flac nodejs npm
+sudo apt-get install git curl arandr mpd mpc ncmpcpp zsh vlc virtualbox virtualenv python3-pip nfs-common lilypond mupdf vim-gtk ffmpegthumbnailer picard gucharmap audacity libreoffice shntools flac nodejs npm pavucontrol
 
 #### Switch to zsh
 chsh -s $(which zsh)
