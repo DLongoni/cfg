@@ -150,7 +150,12 @@ winecfg
 # vm.swappiness=10
 # fs.inotify.max_user_watches = 524288
 #
-# check automatico con https://github.com/raboof/realtimeconfigquickscan
+# Realtime Priority
+# file in /etc/security/limits.d/
+# chiamato audio.conf, contenuto
+# @audio   -  rtprio     95
+# @audio   -  memlock    unlimited
+# check automatico con https://codeberg.org/rtcqs/rtcqs
 
 #### Greeter wp
 # cp /media/davide/SYNOLOGY/Archive/Foto/wp.jpg ~/Pictures/
