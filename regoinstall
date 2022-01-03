@@ -42,6 +42,8 @@ sudo pip3 install virtualenvwrapper
 #### Nas 
 cd /media/davide/SYNOLOGY
 sudo mkdir Music Archive Downloads Video
+owner deve essere davide:davide
+permissions di queste cartelle 775, del contenuto 744
 
 192.168.1.110:/volume2/archive /media/davide/SYNOLOGY/Archive nfs rw,intr,soft,user=davide,async,x-systemd.requires=NetworkManager.service 0 0
 
