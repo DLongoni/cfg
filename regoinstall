@@ -7,6 +7,7 @@ sudo apt-get install git curl arandr mpd mpc ncmpcpp zsh vlc virtualbox virtuale
 #### Solarized
 regolith-look set solarized-dark
 regolith-look refresh 
+gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
 
 #### Switch to zsh
 chsh -s $(which zsh)
@@ -95,8 +96,19 @@ winecfg
 
 #### VM mcs
 # clone config tale e quale così come install vari. poi virualenv. poi clone da repo:
+#
+# sul pc reale sudo apt-get install virtualbox-guest-additions-iso
+# sul pc virtuale devices->insert guest addons cd
+# sul pc virtuale 
+# mount /dev/cdrom /mnt              
+# cd /mnt
+# ./VBoxLinuxAdditions.run
+# reboot
 # sudo apt install net-tools
+# sudo pip3 install ipython pymysql nltk bs4
 # settings network bridged e volendo clipboard bidirectional
+# mkdir, poi git init, poi 
+# git remote add origin ssh://davide@192.168.1.110:3128/volume2/git_repos/EventSpider    
 # remote.origin.url=ssh://davide@192.168.1.110:3128/volume2/git_repos/EventSpider
 # remote.origin.url=ssh://davide@192.168.1.110:3128/volume2/git_repos/EventLearner
 # hosts locale aggiungo 192.168.1.112   dev.milanochesuona.it
@@ -106,6 +118,7 @@ winecfg
 # sudo mysql_secure_installation utility
 # login con sudo e creo db mcs_test e user mcs_user
 # GRANT ALL PRIVILEGES ON mcs_test.*  TO 'mcs_user'@'localhost';
+# ALTER USER 'mcs_user'@'localhost' IDENTIFIED BY 'pw';
 # grant SYSTEM_USER on *.* to 'mcs_user'@'localhost';
 # grant SHOW_ROUTINE on *.* to 'mcs_user'@'localhost';
 # poi importo con 
@@ -114,6 +127,7 @@ winecfg
 # testare con
 # CALL BandGetList();
 #
+# /etc/apache2/sites-available/
 # creare milanochesuona.conf e usare sudo a2ensite milanochesuona.conf
 # <VirtualHost *:80>
 #     ServerName dev.milanochesuona.it
@@ -169,7 +183,7 @@ winecfg
 # background=/home/davide/Pictures/wp.jpg
 
 #### VST
-# manual dpkg install: helm vital sitala
+# manual dpkg install: helm vital sitala surge
 # linvst install deb from https://github.com/osxmidi/LinVst/releases
 # so file in /usr/share/LinVst/64bit-32bit
 # SWS
