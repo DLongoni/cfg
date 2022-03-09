@@ -548,17 +548,18 @@ assign [class="REAPER" title="^Mixer$"] $ws9
 
 # Floating
 for_window [class="REAPER" title="^Mixer$"] floating disable
+for_window [class="REAPER" title="^(.*) Registered to(.*)$"] floating disable
 for_window [class="Matplotlib"] floating enable
-for_window [class="vlc" title="^(.*)VLC media player$"] floating enable, resize set 1600px 1000px, move position center
-for_window [class="vlc" window_type="utility"] floating enable, move position 3215px 0px
+for_window [class="vlc" title="^(.*)VLC media player$"] floating enable, move position center, resize set 1600px 1000px
+for_window [class="vlc" window_type="utility"] floating enable, move position 3161px 0px
 
 # Monitor Bindings
-set $monitor_primary VGA-0
+set $monitor_primary HDMI-0
 workspace "$ws1" output $monitor_primary
 workspace "$ws3" output $monitor_primary
 workspace "$ws8" output $monitor_primary
 
-set $monitor_support HDMI-0
+set $monitor_support DVI-D-0
 workspace "$ws2" output $monitor_support
 workspace "$ws9" output $monitor_support
 
