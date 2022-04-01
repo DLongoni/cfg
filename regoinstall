@@ -122,7 +122,7 @@ winecfg
 # grant SYSTEM_USER on *.* to 'mcs_user'@'localhost';
 # grant SHOW_ROUTINE on *.* to 'mcs_user'@'localhost';
 # poi importo con 
-# sudo mysql -uroot -pJesusin0 mcs_test < mcs20201125_routines.sql
+# sudo mysql -uroot -ppw mcs_test < mcs20201125_routines.sql
 # ma probabilmetne va bene anche import come mcs_test
 # testare con
 # CALL BandGetList();
