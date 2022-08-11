@@ -9,9 +9,13 @@ Xcursor.theme: DMZ (White)
 ! i3-wm.bar.separator: |
 i3-wm.bar.separatorchar: |
 i3xrocks.value.mediaplayerwidth: 120
-i3-wm.bar.font: JetBrains Mono 14, Material Design Icons 14
-i3xrocks.value.font: JetBrains Mono 14, Material Design Icons 14
 i3-wm.bar.trayoutput: HDMI-0
+gtk.monospace_font_name: Medium 16, Material Design Icons 16
+i3xrocks.value.font: Medium 16, Material Design Icons 16
+i3xrocks.label.cpu: 
+i3xrocks.label.sound: 
+i3xrocks.label.mute: 
+i3xrocks.label.time: 
 
 ! -- WALLPAPAER
 regolith.look.path: /usr/share/regolith-look/solarized-dark
@@ -25,24 +29,23 @@ gnome.terminal.font: JetBrains Mono 12
 
 ! -- WS NAMES
 i3-wm.bar.stripworkspacenumbers: no
-i3-wm.workspace.01.name: 1: Term 
-i3-wm.workspace.02.name: 2: Chrome 
-i3-wm.workspace.03.name: 3: Firefox 
+i3-wm.workspace.01.name: 1: Term 
+i3-wm.workspace.02.name: 2: Chrome 
+i3-wm.workspace.03.name: 3: Firefox 
 i3-wm.workspace.04.name: 4: VirtualBox 
-i3-wm.workspace.05.name: 5: Spoty 
-i3-wm.workspace.06.name: 6
-i3-wm.workspace.07.name: 7: Music 
-i3-wm.workspace.08.name: 8: DAW 
-i3-wm.workspace.09.name: 9: Mixer 
+i3-wm.workspace.05.name: 5: Spoty 
+i3-wm.workspace.06.name: 6 
+i3-wm.workspace.07.name: 7: Music 
+i3-wm.workspace.08.name: 8: DAW 
+i3-wm.workspace.09.name: 9: Mixer 
 
 ! -- GAPS
 i3-wm.gaps.inner.size: 8
 i3-wm.gaps.smart: inverse_outer
 
 ! -- GTK
-gtk.font_name: Tahoma 14
-gtk.document_font_name: Tahoma 14
-gtk.monospace_font_name: JetBrains Mono 14
+gtk.font_name: Tahoma 12
+gtk.document_font_name: Tahoma 12
 
 ! -- i3
 i3-wm.hide.edge.borders: none
