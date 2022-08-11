@@ -2,7 +2,11 @@
 # sudo apt-get dist-upgrade
 
 #### Various basic installs
-sudo apt-get install git curl arandr mpd mpc ncmpcpp zsh vlc virtualbox virtualenv python3-pip nfs-common lilypond mupdf vim-gtk ffmpegthumbnailer picard gucharmap audacity libreoffice flac nodejs npm pavucontrol regolith-look-solarized-dark
+sudo apt-get install git curl arandr mpd mpc ncmpcpp zsh vlc virtualbox virtualenv python3-pip nfs-common lilypond mupdf vim-gtk ffmpegthumbnailer picard gucharmap audacity libreoffice flac nodejs npm pavucontrol regolith-look-solarized-dark shntools cuetools
+
+sudo add-apt-repository -y ppa:flacon
+sudo apt-get update
+sudo apt-get install -y flacon
 
 #### Solarized
 regolith-look set solarized-dark
@@ -198,6 +202,8 @@ winecfg
 #### Font GTK
 # gsettings set org.gnome.desktop.interface font-name 'Tahoma 12'
 # gsettings set org.gnome.desktop.interface document-font-name 'Tahoma 12'
+# sudo apt install fonts-materialdesignicons-webfont
+# installare source code pro e jetbrains mono
 #
 # Split audio
 # shnsplit -f *.cue -o flac -t '%n - %p - %t' *.flac

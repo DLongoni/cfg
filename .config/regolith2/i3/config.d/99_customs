@@ -1,0 +1,36 @@
+# Custom Bindings
+bindsym $mod+Shift+o exec nautilus "/media/davide/SAMSUNG/SW/AlgSoft Resizer 4.21"
+bindsym $mod+Shift+i exec nautilus "/home/davide"
+bindsym $mod+m move workspace to output right
+bindsym $mod+e layout toggle splitv splith
+
+# Startup
+exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/x-terminal-emulator'
+
+# Assign Windows
+assign [class="Google-chrome"] $ws2
+assign [class="Firefox"] $ws3
+assign [class="VirtualBox"] $ws4
+assign [class="REAPER" title="^((?!Mixer).)*$"]  $ws8
+assign [class="REAPER" title="^Mixer$"] $ws9
+
+# Floating
+for_window [class="REAPER" title="^Mixer$"] floating disable
+for_window [class="REAPER" title="^(.*) Registered to(.*)$"] floating disable
+for_window [class="Matplotlib"] floating enable
+for_window [class="vlc" title="^(.*)VLC media player$"] floating enable, move position center, resize set 1600px 1000px
+for_window [class="vlc" window_type="utility"] floating enable, move position 3161px 0px
+
+# Monitor Bindings
+set $monitor_primary HDMI-0
+workspace "$ws1" output $monitor_primary
+workspace "$ws3" output $monitor_primary
+workspace "$ws8" output $monitor_primary
+
+set $monitor_support DVI-D-0
+workspace "$ws2" output $monitor_support
+workspace "$ws9" output $monitor_support
+
+# No Gaps For DAW
+workspace "$ws8" gaps inner 0
+workspace "$ws9" gaps inner 0

@@ -98,6 +98,7 @@ alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias uuaa='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove && sudo apt-get autoclean'
 alias xconf='vim /home/davide/.config/regolith/Xresources'
 alias iconf='vim /home/davide/.config/regolith/i3/config'
+alias yd='youtube-dl'
 
 TERM=xterm-256color
 # VIRTUALENVWRAPPER

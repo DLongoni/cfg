@@ -1,22 +1,27 @@
 ! -- UNCLUTTER
-! i3-wm.program.unclutter: /usr/bin/regolit-ftue /usr/bin/unclutter -b --timeout 5
+i3-wm.program.unclutter: 
 
 ! -- CURSOR
 Xcursor.size: 36
 Xcursor.theme: DMZ (White)
 
 ! -- BAR
-i3-wm.bar.separator: |
+! i3-wm.bar.separator: |
+i3-wm.bar.separatorchar: |
 i3xrocks.value.mediaplayerwidth: 120
+i3-wm.bar.font: JetBrains Mono 14, Material Design Icons 14
+i3xrocks.value.font: JetBrains Mono 14, Material Design Icons 14
+i3-wm.bar.trayoutput: HDMI-0
 
 ! -- WALLPAPAER
-gnome.wallpaper: /home/davide/Pictures/wp.jpg
+regolith.look.path: /usr/share/regolith-look/solarized-dark
+regolith.wallpaper.file: /home/davide/Pictures/wp.jpg
 
 ! -- STARTUP
 i3-wm.program.1: google-chrome
 
 ! -- TERMINAL
-gnome.terminal.font:	JetBrains Mono 12
+gnome.terminal.font: JetBrains Mono 12
 
 ! -- WS NAMES
 i3-wm.bar.stripworkspacenumbers: no
@@ -33,3 +38,11 @@ i3-wm.workspace.09.name: 9: Mixer 
 ! -- GAPS
 i3-wm.gaps.inner.size: 8
 i3-wm.gaps.smart: inverse_outer
+
+! -- GTK
+gtk.font_name: Tahoma 14
+gtk.document_font_name: Tahoma 14
+gtk.monospace_font_name: JetBrains Mono 14
+
+! -- i3
+i3-wm.hide.edge.borders: none

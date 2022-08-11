@@ -80,7 +80,6 @@ sudo apt-get install arandr
 naming
 $firstalphachar(%albumartistsort%,#)/$replace($if2(%albumartistsort%,%artistsort%),&,and)
 /$left(%date%,4) - %album%/$num(%tracknumber%,2) - %title%
-2
 
 # qtractor
 install kxstudio repo from

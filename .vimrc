@@ -4,6 +4,8 @@ execute pathogen#helptags()
 
 set nocompatible
 set t_Co=256
+set ttyfast
+set lazyredraw
 
 " Key Mappings {{{
 let mapleader=" "
@@ -106,7 +108,7 @@ let g:closetag_regions =  {
 " GUI {{{
 "line numbers
 set number
-set relativenumber
+" set relativenumber
 set ruler
 set linespace=0
 set scrolloff=3 " Keep 3 rows above and below the cursor row inside window limits
