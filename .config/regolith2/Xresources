@@ -16,6 +16,8 @@ i3xrocks.label.cpu: 
 i3xrocks.label.sound: 
 i3xrocks.label.mute: 
 i3xrocks.label.time: 
+i3xrocks.label.mediaplaying: 
+i3xrocks.label.mediapaused: 
 
 ! -- WALLPAPAER
 regolith.look.path: /usr/share/regolith-look/solarized-dark
