@@ -10,8 +10,8 @@ Xcursor.theme: DMZ (White)
 i3-wm.bar.separatorchar: |
 i3xrocks.value.mediaplayerwidth: 120
 i3-wm.bar.trayoutput: HDMI-0
-gtk.monospace_font_name: Medium 16, Material Design Icons 16
-i3xrocks.value.font: Medium 16, Material Design Icons 16
+gtk.monospace_font_name: Material Design Icons 15
+i3xrocks.value.font: Material Design Icons 15
 i3xrocks.label.cpu: 
 i3xrocks.label.sound: 
 i3xrocks.label.mute: 
@@ -28,6 +28,8 @@ i3-wm.program.1: google-chrome
 
 ! -- TERMINAL
 gnome.terminal.font: JetBrains Mono 12
+gnome.terminal.background-transparency-percent: 10
+gnome.terminal.use-transparent-background: true
 
 ! -- WS NAMES
 i3-wm.bar.stripworkspacenumbers: no
