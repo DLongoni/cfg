@@ -9,7 +9,7 @@ exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/x-terminal-emulator'
 
 # Assign Windows
 assign [class="Google-chrome"] $ws2
-assign [class="Firefox"] $ws3
+assign [class="firefox"] $ws3
 assign [class="VirtualBox"] $ws4
 assign [class="REAPER" title="^((?!Mixer).)*$"]  $ws8
 assign [class="REAPER" title="^Mixer$"] $ws9
