@@ -100,6 +100,7 @@ winecfg
 
 #### VM mcs
 # clone config tale e quale così come install vari. poi virualenv. poi clone da repo:
+# sudo apt install git curl zsh virtualenv python3-pip vim-gtk net-tools php php-cli unzip phpunit mysql-server php-mysql
 #
 # sul pc reale sudo apt-get install virtualbox-guest-additions-iso
 # sul pc virtuale devices->insert guest addons cd
@@ -108,21 +109,21 @@ winecfg
 # cd /mnt
 # ./VBoxLinuxAdditions.run
 # reboot
-# sudo apt install net-tools
-# sudo pip3 install ipython pymysql nltk bs4
+# sudo pip3 install ipython pymysql nltk bs4 sklearn lxml pandas
 # settings network bridged e volendo clipboard bidirectional
 # mkdir, poi git init, poi 
 # git remote add origin ssh://davide@192.168.1.110:3128/volume2/git_repos/EventSpider    
-# remote.origin.url=ssh://davide@192.168.1.110:3128/volume2/git_repos/EventSpider
+# git remote set-url origin ssh://davide@192.168.1.110:3128/volume2/git_repos/EventSpider
 # remote.origin.url=ssh://davide@192.168.1.110:3128/volume2/git_repos/EventLearner
 # hosts locale aggiungo 192.168.1.112   dev.milanochesuona.it
-# sudo apt install php php-cli unzip phpunit
+# cd /var/www/milanochesuona/html/
+# mkdir EventPictures
 #
-# sudo apt-get install mysql-server 
 # sudo mysql_secure_installation utility
-# login con sudo e creo db mcs_test e user mcs_user
+# login con sudo 
+# CREATE DATABASE mcs_test;
+# CREATE USER 'mcs_user'@'localhost' IDENTIFIED BY 'pw';
 # GRANT ALL PRIVILEGES ON mcs_test.*  TO 'mcs_user'@'localhost';
-# ALTER USER 'mcs_user'@'localhost' IDENTIFIED BY 'pw';
 # grant SYSTEM_USER on *.* to 'mcs_user'@'localhost';
 # grant SHOW_ROUTINE on *.* to 'mcs_user'@'localhost';
 # poi importo con 
@@ -143,6 +144,11 @@ winecfg
 # </VirtualHost>
 # sudo a2ensite milanochesuona.conf
 # systemctl reload apache2
+# cd /var/www
+# sudo mkdir milanochesuona
+# sudo chown davide:davide milanochesuona
+# cd milanochesuona
+# git clone https://github.com/DLongoni/milanochesuona ./
 #  
 # install composer
 # poi nella cartella /var/www/milanochesuona fai composer install, non deve servire sudo
@@ -153,7 +159,8 @@ winecfg
   # 3 user = "mcs_user"
   # 4 password = "pw"
 # e anche questo chown e chmod. testare con php-f src/test.php
-# sudo pip3 install ipyton pymysql sklearn nltk BeautifulSoup4 lxml pandas
+# sudo chown davide:davide mcs_config.ini
+# mysqldump -umcs_user -pxxxx mcs_test --routines --no-tablespaces > mcs05012023.sql
 #
 #
 #### Perfo Audio
