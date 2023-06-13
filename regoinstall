@@ -90,9 +90,12 @@ winecfg
 # use-damage = false; # If set to true this causes flickering in VirtualBox
 
 # Openssl
-# openssl aes-256-cbc -a -in enc -d -out o.tar
+# openssl aes-256-cbc -a -in enc -d -out o.tar --NO
 # OR
-# openssl aes-256-cbc -a -in enc -d -out o.tar -md md5
+# openssl aes-256-cbc -a -in enc -d -out o.tar -md md5 --NO
+# openssl aes-256-cbc -a -salt -pbkdf2 -in o.tar -out enc --NO
+# openssl enc -aes-256-cbc -in oa.tar -out enc
+# openssl enc -d -aes-256-cbc -in enc -out o.tar 
 
 # Pulseaudio delay Steinberg UR44
 # edit ~/.config/pulse/default.pa or /etc/pulse/default.pa
@@ -109,7 +112,7 @@ winecfg
 # cd /mnt
 # ./VBoxLinuxAdditions.run
 # reboot
-# sudo pip3 install ipython pymysql nltk bs4 sklearn lxml pandas
+# sudo pip3 install ipython pymysql nltk bs4 scikit-learn lxml pandas
 # settings network bridged e volendo clipboard bidirectional
 # mkdir, poi git init, poi 
 # git remote add origin ssh://davide@192.168.1.110:3128/volume2/git_repos/EventSpider    

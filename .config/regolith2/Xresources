@@ -10,7 +10,9 @@ Xcursor.theme: DMZ (White)
 i3-wm.bar.separatorchar: |
 i3xrocks.value.mediaplayerwidth: 120
 i3-wm.bar.trayoutput: HDMI-0
-gtk.monospace_font_name: Material Design Icons 15
+! gtk.monospace_font_name: Material Design Icons 15
+gtk.monospace_font_name: JetBrains Mono 20
+gtk.font_name: JetBrains Mono 20
 i3xrocks.value.font: Material Design Icons 15
 i3xrocks.label.cpu: 
 i3xrocks.label.sound: 
@@ -20,7 +22,6 @@ i3xrocks.label.mediaplaying: 
 i3xrocks.label.mediapaused: 
 
 ! -- WALLPAPAER
-regolith.look.path: /usr/share/regolith-look/solarized-dark
 regolith.wallpaper.file: /home/davide/Pictures/wp.jpg
 
 ! -- STARTUP
@@ -53,3 +54,5 @@ gtk.document_font_name: Tahoma 12
 
 ! -- i3
 i3-wm.hide.edge.borders: none
+i3-wm.bar.font: Material Design Icons 15
+regolith.look.path: /usr/share/regolith-look/solarized-dark
