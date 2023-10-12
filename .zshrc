@@ -99,6 +99,7 @@ alias uuaa='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremo
 alias xconf='vim /home/davide/.config/regolith/Xresources'
 alias iconf='vim /home/davide/.config/regolith/i3/config'
 alias yd='youtube-dl'
+alias yp='yt-dlp'
 
 TERM=xterm-256color
 # VIRTUALENVWRAPPER
