@@ -102,6 +102,7 @@ alias yd='youtube-dl'
 alias yp='yt-dlp'
 
 TERM=xterm-256color
+
 # VIRTUALENVWRAPPER
 export WORKON_HOME=$HOME/DEV/virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=`which python3`
