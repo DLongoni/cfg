@@ -1,0 +1,58 @@
+! -- UNCLUTTER
+wm.program.unclutter: 
+
+! -- CURSOR
+Xcursor.size: 36
+Xcursor.theme: DMZ (White)
+
+! -- BAR
+! wm.bar.separator: |
+wm.bar.separatorchar: |
+i3xrocks.value.mediaplayerwidth: 120
+wm.bar.trayoutput: HDMI-0
+! gtk.monospace_font_name: Material Design Icons 15
+gtk.monospace_font_name: JetBrains Mono 20
+gtk.font_name: JetBrains Mono 20
+i3xrocks.value.font: Material Design Icons 15
+i3xrocks.label.cpu: 
+i3xrocks.label.sound: 
+i3xrocks.label.mute: 
+i3xrocks.label.time: 
+i3xrocks.label.mediaplaying: 
+i3xrocks.label.mediapaused: 
+
+! -- WALLPAPAER
+regolith.wallpaper.file: /home/davide/Pictures/wp.jpg
+
+! -- STARTUP
+! wm.program.1: google-chrome
+
+! -- TERMINAL
+gnome.terminal.font: JetBrains Mono 12
+gnome.terminal.background-transparency-percent: 10
+gnome.terminal.use-transparent-background: true
+
+! -- WS NAMES
+wm.bar.stripworkspacenumbers: no
+wm.workspace.01.name: 1: Term 
+wm.workspace.02.name: 2: Chrome 
+wm.workspace.03.name: 3: Firefox 
+wm.workspace.04.name: 4: VirtualBox 
+wm.workspace.05.name: 5: Spoty 
+wm.workspace.06.name: 6 
+wm.workspace.07.name: 7: Music 
+wm.workspace.08.name: 8: DAW 
+wm.workspace.09.name: 9: Mixer 
+
+! -- GAPS
+wm.gaps.inner.size: 8
+wm.gaps.smart: inverse_outer
+
+! -- GTK
+gtk.font_name: Tahoma 12
+gtk.document_font_name: Tahoma 12
+
+! -- i3
+wm.hide.edge.borders: none
+wm.bar.font: Material Design Icons 15
+regolith.look.path: /usr/share/regolith-look/solarized-dark
