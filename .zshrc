@@ -100,6 +100,7 @@ alias xconf='vim /home/davide/.config/regolith/Xresources'
 alias iconf='vim /home/davide/.config/regolith/i3/config'
 alias yd='youtube-dl'
 alias yp='yt-dlp'
+alias rmcrash='rm -rf /var/crash/*'
 
 TERM=xterm-256color
 
