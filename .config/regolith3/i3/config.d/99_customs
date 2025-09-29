@@ -1,8 +1,8 @@
 # Custom Bindings
 bindsym $mod+Shift+o exec nautilus "/media/davide/SAMSUNG/SW/AlgSoft Resizer 4.21"
 bindsym $mod+Shift+i exec nautilus "/home/davide"
-bindsym $mod+Shift+z exec "xdotool search --class mpv key 'F11'"
-bindsym $mod+Shift+x exec "xdotool search --class mpv key 'F12'"
+bindsym $Alt+Shift+1 exec "xdotool search --class mpv key 'F11'"
+bindsym $Alt+Shift+2 exec "xdotool search --class mpv key 'F12'"
 bindsym $mod+m move workspace to output right
 bindsym $mod+e layout toggle splitv splith
 
